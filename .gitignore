@@ -1,0 +1,4 @@
+terraform.code-workspace
+.terraform
+*.tfstate
+*.tfstate.backup
