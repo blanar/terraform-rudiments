@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+cat > index.html <<EOF
+<h1>Hello, World!</h1>
+<p>DB address: ${DB_ADDRESS}</p>
+<p>DB port: ${DB_PORT}</p>
+EOF
+
+nohup busybox httpd -f -p "${SERVER_PORT}" &
